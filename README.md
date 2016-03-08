@@ -27,4 +27,7 @@
 
 ## Demo on Heroku
 
-[demo](https://damp-peak-80993.herokuapp.com/login)
+Click here for [demo](https://damp-peak-80993.herokuapp.com/login)
+
+username: yazdan@admin.com
+password: abcd12345
