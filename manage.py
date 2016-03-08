@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import os
+import sys
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "userTracker.settings")
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "userTracker.settings")
 
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
+    from django.core.management import execute_from_command_line
 
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
+    execute_from_command_line(sys.argv)
