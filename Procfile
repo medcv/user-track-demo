@@ -1,1 +1,1 @@
-web: gunicorn userTracker.wsgi --log-file -
+web: gunicorn --chdir userTracker --log-file - userTracker.wsgi:application
